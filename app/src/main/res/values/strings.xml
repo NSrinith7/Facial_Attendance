@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FaceNet Detection</string>
+
+    <string-array name="subject_list">
+        <item>Android</item>
+        <item>Project Management</item>
+        <item>Andvanced Database</item>
+        <item>Web Desinging</item>
+    </string-array>
+</resources>

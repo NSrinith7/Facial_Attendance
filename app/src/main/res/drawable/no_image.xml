@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background -->
+    <item>
+        <shape>
+            <solid android:color="#E0E0E0"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Center Icon -->
+    <item android:gravity="center">
+        <bitmap
+            android:src="@android:drawable/ic_menu_report_image"
+            android:tint="#9E9E9E"/>
+    </item>
+
+</layer-list>

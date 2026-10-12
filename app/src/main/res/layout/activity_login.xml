@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        tools:context=".activities.LoginActivity">
+
+        <ImageView
+            android:id="@+id/img"
+            android:foregroundGravity="center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/student"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Login"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/img"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:layout_below="@+id/tv"
+            android:id="@+id/et_roll"
+            android:singleLine="true"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Student Id or Roll Number"
+            android:textSize="19sp"
+            />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_roll"
+            android:hint="Enter Email"
+            android:inputType="textPassword"
+            android:textSize="19sp"
+            />
+
+
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_password"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Login"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_reg"
+            android:layout_below="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="No account ?"
+            android:visibility="gone"
+            android:textColor="#111111"
+            android:textSize="19sp"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_stuRegister"
+            android:layout_below="@+id/login_btn"
+            android:layout_toRightOf="@+id/tv_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="signup"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#000"
+            android:textSize="19sp" />
+
+
+        <TextView
+            android:id="@+id/tv_forget_pass"
+            android:layout_below="@+id/login_btn"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:text="Forget Password ?"
+            android:textColor="#FF0C91"
+            android:textSize="15dp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>
